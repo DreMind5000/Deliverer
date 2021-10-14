@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+a,a:hover{
+  outline: none;
+}
+img{
+max-width: 100%;
+max-height: 100%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;;
+}
+
+
+
+
+.header-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #dc3545;
+  padding: 20px 15px;
+  margin-bottom: 100px;
+}
+
+.logo a img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.menu-list a {
+  font-size: 30px;
+  text-decoration: none;
+  display: inline;
+  color: #fff;
+}
+
+.menu-list {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;;
+}
+
+
+.upload {
+  background: #343a40;
+  padding: 100px 50px;
+  border-radius: 10px;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.upload h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.upload input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+}
+.upload input:focus{
+  outline: none;
+}
+.upload input:placeholder{
+  font-size: 18px;
+}
+
+.upload button {
+  padding: 18px;
+  background: #dc3545;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+input.fileupload {
+  background: #fff;
+  margin: 30px 0;
+}
+
+
+input.fileupload {
+  background: #fff;
+  margin: 30px 0;
+}
+
+.table {
+  text-align: center;
+  background: #343a40;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.header-area tr {
+  background: #dc3545;
+}
+
+.table tr {
+  background: #dc3545;
+}
+
+.table table {
+  width: 100%;
+  border-spacing: 1px;
+}
+
+.drop-img {
+  text-align: center;
+}
+
+
+
+.drop-img.second-img img {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .container{
+    width: 100%;
+  }
+
+  .logo a img{
+    width: 40px;
+  }
+    .logo a {
+
+      font-size: 18px;
+  }
+
+  .upload {
+    background: #343a40;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+  .upload button, .upload input, .upload input::placeholder{
+    font-size: 16px;
+  }
+
+  .table{
+    padding: 10px;
+  }
+
+  .table th, .table td {
+    font-size: 7px;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+
+.table{
+  margin-bottom: 50px;
+}
+.table{
+  margin-top: 50px;
+}
+.header-area {
+  margin-bottom: 50px;
+}
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container{
+    width: 100%;;
+  }
+}
