@@ -24,6 +24,8 @@ module.exports = {
       network_id: 3
     },
 
+    
+
     testnet: {
       provider: () => new HDWalletProvider(mnemonic, `https://speedy-nodes-nyc.moralis.io/e4727e48ab5cce3dd0141b99/bsc/testnet`),
       network_id: 97,
@@ -37,7 +39,15 @@ module.exports = {
       confirmations: 10,
       timeoutBlocks: 200,
       skipDryRun: true
-    }
+    },
+
+  
+      avax: {
+        provider: function() {
+          return new HDWalletProvider(mnemonic, "https://speedy-nodes-nyc.moralis.io/e4727e48ab5cce3dd0141b99/avalanche/mainnet");
+        },
+        network_id: '*',
+      },
 
   },
   contracts_directory: './src/contracts/',
